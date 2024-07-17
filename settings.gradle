@@ -1,0 +1,8 @@
+rootProject.name = 'ecommerce'
+
+include('eureka')
+include('gateway')
+include('member')
+include('product')
+include('order')
+include('payment')

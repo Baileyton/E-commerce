@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8080
 
 eureka:
   client:
@@ -10,19 +10,19 @@ eureka:
 
 spring:
   application:
-    name: apigateway
+    name: gateway
   cloud:
     gateway:
       routes:
-        - id: user
-          uri: http://localhost:8081/
+        - id: member
+          uri: lb://member
           predicates:
-            - Path=/api/user/**
-        - id: product
-          uri: http://localhost:8082/
-          predicates:
-            - Path=/api/product/**
-        - id: order
-          uri: http://localhost:8083/
-          predicates:
-            - Path=/api/order/**
+            - Path=/api/members/**
+#        - id: product
+#          uri: http://localhost:8082/
+#          predicates:
+#            - Path=/api/products/**
+#        - id: order
+#          uri: http://localhost:8083/
+#          predicates:
+#            - Path=/api/orders/**
