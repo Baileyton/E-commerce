@@ -15,7 +15,7 @@ spring:
     gateway:
       routes:
         - id: member
-          uri: lb://member
+          uri: http://localhost:8081/
           predicates:
             - Path=/api/members/**
 #        - id: product

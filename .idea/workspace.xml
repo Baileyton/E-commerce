@@ -4,57 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2706a63-c31c-4f7e-a820-90fe617599cf" name="Changes" comment="MSA Test">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/member/ecommerce.member.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/entity/BaseTimeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/entity/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/entity/MemberRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/sha1-checksums.bin" afterDir="false" />
+    <list default="true" id="e2706a63-c31c-4f7e-a820-90fe617599cf" name="Changes" comment="refactor : module">
+      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/config/JpaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/dto/SignupDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/exception/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/exception/MemberException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/member/src/main/java/com/member/service/MemberService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/member/ecommerce.member.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/member/ecommerce.member.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/member/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/member/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/member/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/member/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/member/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/java/com/config/ConfigApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/test/java/com/config/ConfigApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/data/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_redo/#ib_redo9" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_redo/#ib_redo9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_9.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/binlog.000002" beforeDir="false" afterPath="$PROJECT_DIR$/data/binlog.000002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/data/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/data/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/data/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/data/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/data/undo_002" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/order/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/member/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/member/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/member/src/main/java/com/member/MemberApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/member/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/test/java/com/user/UserApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/member/src/test/java/com/member/MemberApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member/src/main/java/com/member/entity/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/member/src/main/java/com/member/entity/BaseTimeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member/src/main/java/com/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/member/src/main/java/com/member/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/member/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/member/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +118,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Intellij/mymarket",
+    "last_opened_file_path": "C:/Intellij/E-commerce",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,7 +128,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "7f15b6fe1c2f492764e970a6a9f76a60",
+    "spring.configuration.checksum": "c0eb67702aefbfeeb6fd632df194b742",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -247,7 +238,9 @@
       <workItem from="1719802779886" duration="2926000" />
       <workItem from="1720945763510" duration="13000" />
       <workItem from="1721109251586" duration="6143000" />
-      <workItem from="1721185798457" duration="10798000" />
+      <workItem from="1721185798457" duration="11058000" />
+      <workItem from="1721290350836" duration="22000" />
+      <workItem from="1721373982746" duration="6450000" />
     </task>
     <task id="LOCAL-00001" summary="MSA Test">
       <option name="closed" value="true" />
@@ -257,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719657946048</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor : module">
+      <option name="closed" value="true" />
+      <created>1721210066498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721210066498</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +266,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MSA Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="MSA Test" />
+    <MESSAGE value="refactor : module" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor : module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -285,6 +287,11 @@
           <line>19</line>
           <log-expression expression="ependencies {&#10;    implementation 'org.springframework.boot:spring-boot-starter-web'&#10;    implementation 'org.springframework.boot:spring-boot-starter-security'&#10;    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'&#10;    implementation 'org.springframework.boot:spring-boot-starter-data-redis'&#10;    implementation 'org.springframework.boot:spring-boot-starter-validation'&#10;    implementation 'org.springframework.boot:spring-boot-starter-webflux'&#10;    testImplementation 'org.springframework.boot:spring-boot-starter-test'&#10;    compileOnly 'org.projectlombok:lombok'&#10;    annotationProcessor 'org.projectlombok:lombok'&#10;}" language="JAVA" />
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/member/src/main/java/com/member/controller/MemberController.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
