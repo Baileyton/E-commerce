@@ -18,10 +18,10 @@ spring:
           uri: http://localhost:8081/
           predicates:
             - Path=/api/members/**
-#        - id: product
-#          uri: http://localhost:8082/
-#          predicates:
-#            - Path=/api/products/**
+        - id: product
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/api/products/**
 #        - id: order
 #          uri: http://localhost:8083/
 #          predicates:

@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2706a63-c31c-4f7e-a820-90fe617599cf" name="Changes" comment="feat : 회원가입">
-      <change afterPath="$PROJECT_DIR$/stock/src/main/java/com/stock/entity/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/src/main/java/com/stock/repository/StockRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/src/main/java/com/stock/service/PessimisticLockStockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/src/main/java/com/stock/service/StockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/src/test/java/com/stock/service/StockServiceTest.java" afterDir="false" />
+    <list default="true" id="e2706a63-c31c-4f7e-a820-90fe617599cf" name="Changes" comment="test : 재고 감소 동시성 테스트">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/product/ecommerce.product.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/stock/ecommerce.stock.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/product/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/product/entity/BaseTimeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/product/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/product/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/product/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
@@ -20,8 +21,7 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/member/ecommerce.member.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/member/ecommerce.member.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/data/#ib_16384_0.dblwr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/#innodb_redo/#ib_redo9" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_redo/#ib_redo9" afterDir="false" />
@@ -35,7 +35,7 @@
       <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_7.ibt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_8.ibt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/data/#innodb_temp/temp_9.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/binlog.000003" beforeDir="false" afterPath="$PROJECT_DIR$/data/binlog.000003" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/binlog.000004" beforeDir="false" afterPath="$PROJECT_DIR$/data/binlog.000004" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/data/binlog.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/data/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/data/ibdata1" afterDir="false" />
@@ -43,7 +43,11 @@
       <change beforePath="$PROJECT_DIR$/data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/data/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/data/undo_002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/product/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/product/ProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/product/ProductApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/product/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +92,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -133,7 +137,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "spring.configuration.checksum": "c0eb67702aefbfeeb6fd632df194b742",
+    "spring.configuration.checksum": "beca50129ee0cb9e72156672c5e6c7a9",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -155,76 +159,7 @@
       <recent name="com.core.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.StockServiceTest.동시에_100개의_요청">
-    <configuration name="StockServiceTest.재고감소" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":stock:test" />
-            <option value="--tests" />
-            <option value="&quot;com.stock.service.StockServiceTest.재고감소&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="StockServiceTest.동시에_100개의_요청" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":stock:test" />
-            <option value="--tests" />
-            <option value="&quot;com.stock.service.StockServiceTest.동시에_100개의_요청&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="E-commerce.config.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.config.ConfigApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="ecommerce.core.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.core.CoreApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ECommerceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="E-commerce.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.E_commerce.ECommerceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.ProductApplication">
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ecommerce.eureka.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eureka.EurekaApplication" />
@@ -288,12 +223,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.StockServiceTest.동시에_100개의_요청" />
-        <item itemvalue="Gradle.StockServiceTest.재고감소" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -321,7 +250,9 @@
       <workItem from="1721290350836" duration="22000" />
       <workItem from="1721373982746" duration="6610000" />
       <workItem from="1721458018815" duration="1232000" />
-      <workItem from="1721541234627" duration="6386000" />
+      <workItem from="1721541234627" duration="7065000" />
+      <workItem from="1721552565942" duration="40000" />
+      <workItem from="1721622785946" duration="7479000" />
     </task>
     <task id="LOCAL-00001" summary="MSA Test">
       <option name="closed" value="true" />
@@ -347,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721382303841</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="test : 재고 감소 동시성 테스트">
+      <option name="closed" value="true" />
+      <created>1721552487747</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721552487747</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +296,8 @@
     <MESSAGE value="MSA Test" />
     <MESSAGE value="refactor : module" />
     <MESSAGE value="feat : 회원가입" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 회원가입" />
+    <MESSAGE value="test : 재고 감소 동시성 테스트" />
+    <option name="LAST_COMMIT_MESSAGE" value="test : 재고 감소 동시성 테스트" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
